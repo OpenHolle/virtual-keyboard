@@ -1,0 +1,9 @@
+{
+  "name": "@openholle/virtual-keyboard",
+  "version": "0.0.1",
+  "description": "React virtual keyboard",
+  "main": "index.js",
+  "repository": "git@github.com:OpenHolle/virtual-keyboard.git",
+  "author": "Dyrkov Andrey <webworkdeveloper@gmail.com>",
+  "license": "MIT"
+}
