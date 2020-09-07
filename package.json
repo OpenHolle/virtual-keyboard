@@ -2,8 +2,37 @@
   "name": "@openholle/virtual-keyboard",
   "version": "0.0.1",
   "description": "React virtual keyboard",
-  "main": "index.js",
+  "main": "build/bundle-cjs.js",
+  "module": "build/bundle-es.js",
   "repository": "git@github.com:OpenHolle/virtual-keyboard.git",
+  "scripts": {
+    "build": "rollup --config",
+    "start": "rollup --config --watch"
+  },
   "author": "Dyrkov Andrey <webworkdeveloper@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.13.0",
+    "react-dom": ">=16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "eslint": "^7.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "rollup": "^2.26.6",
+    "rollup-plugin-visualizer": "^4.1.1"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
